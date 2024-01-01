@@ -2,7 +2,7 @@ import { app,server,express} from "./socket.js";
 import router from "./routes/route.js";
 import { dirname,join } from 'node:path'
 import { fileURLToPath } from "node:url";
-import 'dotenv/config'
+
 
 
 const _dirname = dirname(fileURLToPath(import.meta.url))
@@ -15,4 +15,4 @@ app.use('/',router)
 
 
 
-server.listen(process.env.PORT)
+server.listen(3000)
