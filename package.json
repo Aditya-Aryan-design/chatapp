@@ -5,6 +5,7 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
+    "start": "node ./templateServer/server.js",
     "dev": "nodemon ./templateServer/server.js"
   },
   "dependencies": {
