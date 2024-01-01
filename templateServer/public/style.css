@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    user-zoom: fixed;
+}
+
+body{
+    display: flex;
+    font-size: 3.5vmin;
+    font-family: sans-serif;
+}
+
+.sidebar{
+    flex: 20%;
+    background-color: #ddd;
+    height: 100vh;
+    overflow-y: auto;
+}
+#main{
+    flex: 70%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.user{
+    text-align: center;
+    padding: 2vmin 0;
+    border: 1px solid white;
+    color: black;
+}
+
+.user:hover, .active{
+    color: white;
+    background-color: #555;
+}
+
+
+
+#container{
+    flex: 100%;
+    overflow-y: auto;
+}
+
+#header{
+    background-color: #ddd;
+    padding: 2vh;
+    font: bold;
+}
+
+.inpCont{
+    display: flex;
+}
+
+#inp{
+    flex: 100%;
+    font-size: 3vmin;
+    padding: 1vmin 1.5vmin;
+    outline: none;
+}
+
+.inpCont > button{
+    font: bold;
+    font-size: 2.5vmin;
+    background-color: #ddd;
+    padding: 1.5vmin;
+}
+
+.inpCont > button:hover{
+    color: white;
+    background-color: #555;
+}
+
+.you{
+    word-break: break-all;
+    width: fit-content;
+    padding: 2vmin;
+    margin: 2vmin;
+    background-color: #555;
+    color: white;
+    float: right;
+    border-radius: 2vmin;
+    display: block;
+    clear: both;
+    
+}
+.other{
+    word-break: break-all;
+    width: fit-content;
+    padding: 2vmin;
+    margin: 2vmin;
+    background-color: #aaa;
+    float: left;
+    border-radius: 2vmin;
+    clear: both;
+}
+
+.notification{
+    background-color: red;
+    position: relative;
+    right: 0;
+    font: bold;
+    border-radius: 10vmin;
+    font-size: 2.3vmin;
+    padding: 0.5vmin 1vmin;
+    border: 0.2vmin solid white;
+    margin-top: 2vmin;
+    color: white;
+
+}
